@@ -14,7 +14,7 @@ source "${REPO_ROOT}/lib/shell/check_setup.sh"
 # Load settings & tools
 source "${REPO_ROOT}/local_env.sh"
 source "${REPO_ROOT}/lib/shell/run_shell.sh"
-#source "${REPO_ROOT}/lib/shell/run_xxx.sh"
+source "${REPO_ROOT}/lib/shell/run_python.sh"
 
 # Clear output directory
 # (Guarantees that all output is produced from a clean run of the code)
@@ -25,7 +25,7 @@ mkdir -p "${MAKE_SCRIPT_DIR}/output"
 # (Make sure this section is updated to pull in all needed input files!)
 rm -rf "${MAKE_SCRIPT_DIR}/input"
 mkdir -p "${MAKE_SCRIPT_DIR}/input"
-# cp my_source_files "${MAKE_SCRIPT_DIR}/input/"
+cp "${REPO_ROOT}/examples/inputs_for_examples/mpg.csv" "${MAKE_SCRIPT_DIR}/input/"
 
 # Tell user what we're doing
 echo -e "\n\nMaking module \033[35m${MODULE}\033[0m with shell ${SHELL}"
@@ -39,7 +39,7 @@ echo -e "\n\nMaking module \033[35m${MODULE}\033[0m with shell ${SHELL}"
 
     cd source
     run_shell my_shell_script.sh "${LOGFILE}"
-	# run_xxx my_script.xx "${LOGFILE}"
+	run_python wrangle_data.py "${LOGFILE}"
 
 ) 2>&1 | tee "${LOGFILE}"
 

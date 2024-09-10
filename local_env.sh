@@ -9,7 +9,7 @@
 
 # Name of local executables
 export stataCmd="StataMP"
-export pythonCmd="python3"
+export pythonCmd="python"
 export rCmd="Rscript"
 
 # Add other local settings required for your repository here

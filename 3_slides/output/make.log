@@ -1,4 +1,23 @@
-make.sh started at 2024-08-12 17:38:54
-Executing: zsh my_shell_script.sh
-Hello world!
-make.sh finished at 2024-08-12 17:38:54
+make.sh started at 2024-09-10 15:21:46
+Executing: bash my_shell_script.sh
+Executing: latexmk my_project_slides.tex -pdf -bibtex
+Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+Reverting Windows console CPs to (in,out) = (850,850)
+Initial Win CP for (console input, console output, system): (CP850, CP850, CP1252)
+I changed them all to CP1252
+Rc files read:
+  NONE
+Latexmk: This is Latexmk, John Collins, 7 Apr. 2024. Version 4.85.
+Latexmk: Nothing to do for 'my_project_slides.tex'.
+Latexmk: All targets (my_project_slides.pdf) are up-to-date
+Collected error summary (may duplicate other messages):
+  pdflatex: gave an error in previous invocation of latexmk.
+
+C:\texlive\2024\bin\windows\runscript.tlu:922: command failed with exit code 12:
+perl.exe c:\texlive\2024\texmf-dist\scripts\latexmk\latexmk.pl my_project_slides.tex -pdf -bibtex
+make.sh finished at 2024-09-10 15:21:46
