@@ -8,7 +8,7 @@
 ###############################################################################
 
 # Name of local executables
-export stataCmd="StataMP"
+export stataCmd="StataSE-64"
 export pythonCmd="python"
 export rCmd="Rscript"
 

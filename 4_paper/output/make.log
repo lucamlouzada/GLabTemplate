@@ -1,4 +1,4 @@
-make.sh started at 2024-09-10 15:21:47
+make.sh started at 2024-09-10 16:00:48
 Executing: bash my_shell_script.sh
 Executing: latexmk my_project.tex -pdf -bibtex
 Initial Win CP for (console input, console output, system): (CP850, CP850, CP1252)
@@ -6,12 +6,12 @@ I changed them all to CP1252
 Rc files read:
   NONE
 Latexmk: This is Latexmk, John Collins, 7 Apr. 2024. Version 4.85.
+No existing .aux file, so I'll make a simple one, and require run of *latex.
 Latexmk: applying rule 'pdflatex'...
 Rule 'pdflatex':  Reasons for rerun
-Changed files or newly in use/created:
-  ../input/table_reg.tex
-Category 'changed_user':
-  ../input/table_reg.tex
+Category 'other':
+  Rerun of 'pdflatex' forced or previously required:
+    Reason or flag: 'Initial setup'
 
 ------------
 Run number 1 of rule 'pdflatex'
@@ -139,33 +139,33 @@ ne 55.
 
 [2]
 [3]
-[4] (./my_project.bbl
+[4]
+No file my_project.bbl.
 
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
-[5]
-[6 <../input/figure_city.jpg> <../input/figure_hwy.jpg>]
+[5 <../input/figure_city.jpg> <../input/figure_hwy.jpg>]
 (../input/table_reg.tex)
 
 Package natbib Warning: There were undefined citations.
 
 
-[7] (./my_project.aux)
+[6] (./my_project.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
- )<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tex
-live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024
-/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on my_project.pdf (7 pages, 120146 bytes).
+ )<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/ti
+mes/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:
+/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on my_project.pdf (6 pages, 153916 bytes).
 Transcript written on my_project.log.
+Latexmk: Missing bbl file 'my_project.bbl' in following:
+ No file my_project.bbl.
 Latexmk: Getting log file 'my_project.log'
 Latexmk: Examining 'my_project.fls'
 Latexmk: Examining 'my_project.log'
-Latexmk: Found input bbl file 'my_project.bbl'
 Latexmk: References changed.
 Latexmk: Log file says output to 'my_project.pdf'
 Latexmk: Found bibliography file(s):
@@ -174,8 +174,9 @@ Bib file(s) not found in search path:
   my_project.bib
 Latexmk: applying rule 'bibtex my_project'...
 Rule 'bibtex my_project':  Reasons for rerun
-Changed files or newly in use/created:
-  my_project.aux
+Category 'other':
+  Rerun of 'bibtex my_project' forced or previously required:
+    Reason or flag: 'Initial set up of rule'
 
 ------------
 Run number 1 of rule 'bibtex my_project'
@@ -215,4 +216,4 @@ Collected error summary (may duplicate other messages):
 
 C:\texlive\2024\bin\windows\runscript.tlu:922: command failed with exit code 12:
 perl.exe c:\texlive\2024\texmf-dist\scripts\latexmk\latexmk.pl my_project.tex -pdf -bibtex
-make.sh finished at 2024-09-10 15:21:49
+make.sh finished at 2024-09-10 16:00:51
