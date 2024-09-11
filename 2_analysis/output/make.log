@@ -1,9 +1,9 @@
-make.sh started at 2024-09-11 09:26:29
+make.sh started at 2024-09-11 10:39:05
 Executing: bash my_shell_script.sh
 Executing: Rscript analyze_data.r
 
 % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-% Date and time: qua, set 11, 2024 - 09:26:30
+% Date and time: qua, set 11, 2024 - 10:39:06
 % Requires LaTeX packages: dcolumn 
 \begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
 \\[-1.8ex]\hline 
@@ -33,4 +33,4 @@ F Statistic & \multicolumn{1}{c}{408.248$^{***}$ (df = 1; 232)} & \multicolumn{1
 \hline \\[-1.8ex] 
 \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
-make.sh finished at 2024-09-11 09:26:31
+make.sh finished at 2024-09-11 10:39:07

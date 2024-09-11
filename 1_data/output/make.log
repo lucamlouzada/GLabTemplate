@@ -1,4 +1,4 @@
-make.sh started at 2024-09-11 09:26:28
+make.sh started at 2024-09-11 10:39:04
 Executing: bash my_shell_script.sh
 Executing: Rscript wrangle_data.r
 ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
@@ -11,4 +11,4 @@ Executing: Rscript wrangle_data.r
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-make.sh finished at 2024-09-11 09:26:29
+make.sh finished at 2024-09-11 10:39:05
